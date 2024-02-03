@@ -21,6 +21,10 @@ function getRandomTile() {
 }
 
 function setMole() {
+  if (currMoleTile) {
+    currMoleTile.innerHTML = "";
+  }
+
   let mole = document.createElement("img");
   mole.src = "./img/monty-mole.png";
 
